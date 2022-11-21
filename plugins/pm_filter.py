@@ -433,13 +433,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('<b⁠>➕ 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 ➕<⁠/b⁠>', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
-            InlineKeyboardButton('⚡ SUBSCᏒIBΞ ⚡', url='https://youtube.com/c/GreyMattersBot'),
-            InlineKeyboardButton('🤖 UᎮDΛTΞS 🤖', url='https://t.me/greymatter_bots')
+            InlineKeyboardButton('<b⁠>🔍 𝚂𝙴𝙰𝚁𝙲𝙷<⁠/b⁠>', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('<b⁠>🌐 𝙰𝙱𝙾𝚄𝚃<⁠/b⁠>', callback_data='about')
         ], [
-            InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
-            InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
+            InlineKeyboardButton('<b⁠>💡 𝙷𝙴𝙻𝙿<⁠/b⁠>', callback_data='help'),
+            InlineKeyboardButton('<b⁠>🤖 𝚄𝙿𝙳𝙰𝚃𝙴𝚂<⁠/b⁠>', url='https://t.me/TorrentSerie')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
