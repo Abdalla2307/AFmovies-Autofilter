@@ -81,6 +81,11 @@ async def next_page(bot, query):
             ]
             for file in files
         ]
+    btn.insert(0,
+        [
+            InlineKeyboardButton(text="⚡𝐂𝐡𝐞𝐜𝐤 𝐏𝐌⚡", url='t.me/ArrowFlixBot')
+        ]
+    )
 
     if 0 < offset <= 10:
         off_set = 0
