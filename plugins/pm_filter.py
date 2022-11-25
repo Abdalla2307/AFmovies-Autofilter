@@ -662,6 +662,11 @@ async def auto_filter(client, msg, spoll=False):
             ]
             for file in files
         ]
+    btn.insert(0,
+        [
+            InlineKeyboardButton(text="⚡𝐂𝐡𝐞𝐜𝐤 𝐏𝐌⚡", url='https://t.me/ArrowFlixBot')
+        ]
+    )
 
     if offset != "":
         key = f"{message.chat.id}-{message.id}"
